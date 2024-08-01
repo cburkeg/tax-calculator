@@ -1,0 +1,215 @@
+html {
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.hero {
+  height: auto;
+  position: relative;
+  background-image: url('https://hnry.co.nz/img/hero/Hnry-Gradient-Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+  padding: 64px 48px 400px;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero > h1 {
+  font-family: Oxygen, sans-serif;
+}
+
+.hero > div > p {
+  font-size: 24px;
+  color: white;
+  text-align: justify;
+  line-height: 36px;
+}
+
+.hero > div > img {
+  width: auto;
+  height: 300px;
+}
+
+.hero > h1 {
+  padding-top: 24px;
+  color: white;
+}
+
+.wavebg {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: -1vw;
+  width: 102vw;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: 50% 50%;
+  padding-top: 20%;
+  background-image: url('data:image/svg+xml,%3Csvg%20fill%3D%22%23fff%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201920%20300%22%3E%3Cpath%20d%3D%22M0%20300V0c160.8%200%20212.3%2049.2%20252.1%2075.9%2042.3%2028.4%2082.5%2058.5%20174%2059.2%2084%200.7%20136.3-11.7%20197.2-29.6s139.3-36.3%20190.6-36.3c79.9%200%20150%2048.9%20196%2080.8%2046%2031.9%20160.3%20120.3%20267%20120.3%20106.6%200%20210.5-51.5%20298.9-107.1C1687.9%2092.8%201730.6%200%201920%200v300H0z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+input {
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.radiobuttongroup {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='radio'] {
+  margin-right: 10px;
+}
+
+.taxcalc {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.taxcalc > div {
+  display: flex;
+  gap: 100px;
+}
+
+.taxcalc > div > div {
+  width: 50%;
+}
+
+.portfolio {
+  background-color: #f8f7fc;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.portfolio > div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 0 4px;
+}
+
+.portfolio .item {
+  display: flex;
+  margin: 48px auto;
+}
+
+.portfolio .thumbnail {
+  width: 30%;
+  margin-right: 48px;
+}
+
+.portfolio .thumbnail img {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.portfolio .description {
+  width: 70%;
+  text-align: left;
+}
+
+.portfolio .description h2 {
+  margin-top: 0;
+}
+
+.portfolio .description p {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.portfolio > div > h1 {
+  text-align: justify;
+}
+
+.portfolio > div > div {
+  margin: 0 auto 50px;
+}
+
+.footer {
+  background-size: contain;
+  background-color: #5d5096;
+  color: #f8f7fc;
+  padding-top: 15%;
+  background-size: 0;
+  background-position: 50% 20%;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer > div {
+  max-width: 1000px;
+  font-family: Oxygen, sans-serif;
+  margin: 48px auto;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.footer > div > h1 {
+  font-size: 48px;
+}
+
+.footer > div > p {
+  font-size: 24px;
+}
+
+.footer .icons {
+  margin-top: 36px;
+}
+
+.footer .icons a {
+  margin: 24px;
+}
+
+.footer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1vw;
+  width: 102vw;
+  background-image: url('/images/border-wavy-footer-recoloured.svg');
+  background-size: cover;
+  background-color: #5d5096;
+  padding-top: 15%;
+}
+
+a {
+  color: inherit;
+}
+
+.disclaimer {
+  font-size: 12px;
+  padding-left: 10px;
+}
